@@ -1,0 +1,12 @@
+
+<%= form_with(url: "/", method: 'get', local: true)  do |f| %>
+  <h2>Flickr api</h2>
+
+  <div>
+  <%= f.label :flickr_user_id, "Flickr User Id:" %>
+   <%= f.text_field :flickr_user_id %>
+  </div>
+
+  <%= f.submit "Show photos" %>
+<% end %>
+
